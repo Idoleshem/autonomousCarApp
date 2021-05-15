@@ -3,7 +3,7 @@ const carsCells = [
   {
     carId: 1,
     start: 2,
-    end: 5,
+    end: 6,
   },
   {
     carId: 2,
