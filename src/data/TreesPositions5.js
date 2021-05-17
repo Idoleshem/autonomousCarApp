@@ -2,48 +2,46 @@ import CellsLocationMargin from "./cellsLocationMargin";
 const treesCells = [
   {
     treeId: 1,
-    start: 4,
-    end: 4,
+    start: 0,
+    end: 0,
   },
   {
     treeId: 2,
-    start: 15,
-    end: 15,
+    start: 9,
+    end: 8,
   },
   {
     treeId: 3,
-    start: 7,
-    end: 7,
+    start: 2,
+    end: 0,
   },
   {
     treeId: 4,
-    start: 15,
-    end: 15,
+    start: 4,
+    end: 0,
   },
   {
     treeId: 5,
-    start: 4,
-    end: 4,
+    start: 10,
+    end: 9,
   },
   {
+    //flag
     treeId: 6,
-    start: 15,
-    end: 15,
+    start: 7,
+    end: 6,
   },
   {
+    //flag
     treeId: 7,
-    start: 4,
-    end: 4,
-  },
-  {
-    treeId: 8,
     start: 15,
-    end: 15,
+    end: 14,
   },
 ];
 
-const TreesPositions0 = [
+const TreesPositions5 = [
   {
+    //1
     treeId: "tree0",
     name: 0,
     treeAnim: {
@@ -56,7 +54,7 @@ const TreesPositions0 = [
       show: {
         x: CellsLocationMargin[treesCells[0].end].x,
         y: CellsLocationMargin[treesCells[0].end].y,
-        opacity: 1,
+        opacity: 0,
         scale: 0.8,
         transition: { duration: 2, ease: "linear", delay: 0.4 },
       },
@@ -64,6 +62,7 @@ const TreesPositions0 = [
   },
 
   {
+    //2
     treeId: "tree0",
     name: 0,
     treeAnim: {
@@ -77,13 +76,14 @@ const TreesPositions0 = [
         x: CellsLocationMargin[treesCells[1].end].x,
         y: CellsLocationMargin[treesCells[1].end].y,
 
-        opacity: 1,
+        opacity: 0,
         scale: 0.8,
         transition: { duration: 2, ease: "linear", delay: 0.4 },
       },
     },
   },
   {
+    //3
     treeId: "tree0",
     name: 0,
     treeAnim: {
@@ -92,7 +92,7 @@ const TreesPositions0 = [
         y: CellsLocationMargin[treesCells[2].start].y,
         opacity: 0,
         scale: 0.8,
-      },
+      }, //4
       show: {
         x: CellsLocationMargin[treesCells[2].end].x,
         y: CellsLocationMargin[treesCells[2].end].y,
@@ -104,6 +104,7 @@ const TreesPositions0 = [
   },
 
   {
+    //4
     treeId: "tree0",
     name: 0,
     treeAnim: {
@@ -124,19 +125,20 @@ const TreesPositions0 = [
     },
   },
   {
+    //5
     treeId: "tree0",
     name: 0,
     treeAnim: {
       hidden: {
         x: CellsLocationMargin[treesCells[4].start].x,
         y: CellsLocationMargin[treesCells[4].start].y,
-        opacity: 0,
+        opacity: 1,
         scale: 0.8,
-      },
+      }, //6
       show: {
         x: CellsLocationMargin[treesCells[4].end].x,
         y: CellsLocationMargin[treesCells[4].end].y,
-        opacity: 0,
+        opacity: 1,
         scale: 0.8,
         transition: { duration: 2, ease: "linear", delay: 0.4 },
       },
@@ -144,8 +146,9 @@ const TreesPositions0 = [
   },
 
   {
+    //6
     treeId: "tree0",
-    name: 0,
+    name: 3,
     treeAnim: {
       hidden: {
         x: CellsLocationMargin[treesCells[5].start].x,
@@ -157,15 +160,16 @@ const TreesPositions0 = [
         x: CellsLocationMargin[treesCells[5].end].x,
         y: CellsLocationMargin[treesCells[5].end].y,
 
-        opacity: 0,
+        opacity: 1,
         scale: 0.8,
         transition: { duration: 2, ease: "linear", delay: 0.4 },
       },
     },
   },
   {
+    //7
     treeId: "tree0",
-    name: 0,
+    name: 3,
     treeAnim: {
       hidden: {
         x: CellsLocationMargin[treesCells[6].start].x,
@@ -176,28 +180,7 @@ const TreesPositions0 = [
       show: {
         x: CellsLocationMargin[treesCells[6].end].x,
         y: CellsLocationMargin[treesCells[6].end].y,
-        opacity: 0,
-        scale: 0.8,
-        transition: { duration: 2, ease: "linear", delay: 0.4 },
-      },
-    },
-  },
-
-  {
-    treeId: "tree0",
-    name: 0,
-    treeAnim: {
-      hidden: {
-        x: CellsLocationMargin[treesCells[7].start].x,
-        y: CellsLocationMargin[treesCells[7].start].y,
-        opacity: 0,
-        scale: 0.8,
-      },
-      show: {
-        x: CellsLocationMargin[treesCells[7].end].x,
-        y: CellsLocationMargin[treesCells[7].end].y,
-
-        opacity: 0,
+        opacity: 1,
         scale: 0.8,
         transition: { duration: 2, ease: "linear", delay: 0.4 },
       },
@@ -205,4 +188,4 @@ const TreesPositions0 = [
   },
 ];
 
-export default TreesPositions0;
+export default TreesPositions5;

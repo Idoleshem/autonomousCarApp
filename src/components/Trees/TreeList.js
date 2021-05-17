@@ -6,7 +6,12 @@ let TreeList = ({ TreesPositions }) => {
   return (
     <div className="car-List">
       {TreesPositions.map((tree) => (
-        <Tree key={tree.treeId} treeAnim={tree.treeAnim} />
+        <Tree
+          key={tree.treeId}
+          Id={tree.treeId}
+          name={tree.name}
+          treeAnim={tree.treeAnim}
+        />
       ))}
     </div>
   );

@@ -4,6 +4,8 @@ import CarList from "../Cars/CarList";
 import TreeList from "../Trees/TreeList";
 import AllPositions from "../../data/AllPositions";
 import AllTrees from "../../data/AllTrees";
+import AI from "./AI";
+import Dashboard from "./Dashboard";
 
 const HighwayScene = () => {
   const nextHandler = (direction) => {
@@ -51,6 +53,8 @@ const HighwayScene = () => {
           Next
         </button>
         <b>Trial number: {currentPosition}</b>
+        <AI currentPosition={currentPosition} />
+        <Dashboard currentPosition={currentPosition} />
       </div>
     </div>
   );

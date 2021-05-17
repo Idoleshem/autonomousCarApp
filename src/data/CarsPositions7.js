@@ -3,42 +3,44 @@ const carsCells = [
   {
     carId: 1,
     start: 9,
-    end: 17,
+    end: 9,
   },
   {
+    //canceled
     carId: 2,
     start: 16,
     end: 16,
   },
   {
     carId: 3,
-    start: 4,
-    end: 3,
+    start: 2,
+    end: 4,
   },
   {
     carId: 4,
-    start: 12,
-    end: 18,
+    start: 18,
+    end: 16,
   },
   {
+    //canceled
     carId: 5,
     start: 7,
     end: 7,
   },
   {
     carId: 6,
-    start: 15,
-    end: 15,
+    start: 10,
+    end: 11,
   },
   {
     carId: 7,
-    start: 23,
-    end: 23,
+    start: 17,
+    end: 17,
   },
   {
     carId: 8,
-    start: 0,
-    end: 0,
+    start: 21,
+    end: 20,
   },
   {
     carId: 9,
@@ -52,7 +54,7 @@ const carsCells = [
   },
 ];
 
-const CarsPositions2 = [
+const CarsPositions7 = [
   {
     //0
     carId: "car1",
@@ -124,7 +126,7 @@ const CarsPositions2 = [
         x: CellsLocation[carsCells[3].end].x,
         y: CellsLocation[carsCells[3].end].y,
 
-        opacity: 1,
+        opacity: 0,
         transition: { duration: 2, ease: "linear", delay: 0.4 },
       },
     },
@@ -189,7 +191,7 @@ const CarsPositions2 = [
   {
     // 7
     carId: "car1",
-    name: 3,
+    name: 2,
     carAnim: {
       hidden: {
         x: CellsLocation[carsCells[7].start].x,
@@ -200,7 +202,7 @@ const CarsPositions2 = [
         x: CellsLocation[carsCells[7].end].x,
         y: CellsLocation[carsCells[7].end].y,
 
-        opacity: 0,
+        opacity: 1,
         transition: { duration: 2, ease: "linear", delay: 0.4 },
       },
     },
@@ -245,4 +247,4 @@ const CarsPositions2 = [
   },
 ];
 
-export default CarsPositions2;
+export default CarsPositions7;

@@ -2,48 +2,44 @@ import CellsLocationMargin from "./cellsLocationMargin";
 const treesCells = [
   {
     treeId: 1,
-    start: 4,
-    end: 4,
+    start: 0,
+    end: 0,
   },
   {
     treeId: 2,
-    start: 15,
-    end: 15,
+    start: 9,
+    end: 8,
   },
   {
     treeId: 3,
+    start: 2,
+    end: 0,
+  },
+  {
+    treeId: 4,
+    start: 6,
+    end: 4,
+  },
+  {
+    treeId: 5,
+    start: 15,
+    end: 14,
+  },
+  {
+    treeId: 6,
     start: 7,
     end: 7,
   },
   {
-    treeId: 4,
-    start: 15,
-    end: 15,
-  },
-  {
-    treeId: 5,
-    start: 4,
-    end: 4,
-  },
-  {
-    treeId: 6,
-    start: 15,
-    end: 15,
-  },
-  {
     treeId: 7,
-    start: 4,
-    end: 4,
-  },
-  {
-    treeId: 8,
     start: 15,
     end: 15,
   },
 ];
 
-const TreesPositions0 = [
+const TreesPositions3 = [
   {
+    //1
     treeId: "tree0",
     name: 0,
     treeAnim: {
@@ -56,7 +52,7 @@ const TreesPositions0 = [
       show: {
         x: CellsLocationMargin[treesCells[0].end].x,
         y: CellsLocationMargin[treesCells[0].end].y,
-        opacity: 1,
+        opacity: 0,
         scale: 0.8,
         transition: { duration: 2, ease: "linear", delay: 0.4 },
       },
@@ -64,6 +60,7 @@ const TreesPositions0 = [
   },
 
   {
+    //2
     treeId: "tree0",
     name: 0,
     treeAnim: {
@@ -77,13 +74,14 @@ const TreesPositions0 = [
         x: CellsLocationMargin[treesCells[1].end].x,
         y: CellsLocationMargin[treesCells[1].end].y,
 
-        opacity: 1,
+        opacity: 0,
         scale: 0.8,
         transition: { duration: 2, ease: "linear", delay: 0.4 },
       },
     },
   },
   {
+    //3
     treeId: "tree0",
     name: 0,
     treeAnim: {
@@ -92,7 +90,7 @@ const TreesPositions0 = [
         y: CellsLocationMargin[treesCells[2].start].y,
         opacity: 0,
         scale: 0.8,
-      },
+      }, //4
       show: {
         x: CellsLocationMargin[treesCells[2].end].x,
         y: CellsLocationMargin[treesCells[2].end].y,
@@ -104,6 +102,7 @@ const TreesPositions0 = [
   },
 
   {
+    //4
     treeId: "tree0",
     name: 0,
     treeAnim: {
@@ -117,26 +116,27 @@ const TreesPositions0 = [
         x: CellsLocationMargin[treesCells[3].end].x,
         y: CellsLocationMargin[treesCells[3].end].y,
 
-        opacity: 0,
+        opacity: 1,
         scale: 0.8,
         transition: { duration: 2, ease: "linear", delay: 0.4 },
       },
     },
   },
   {
+    //5
     treeId: "tree0",
     name: 0,
     treeAnim: {
       hidden: {
         x: CellsLocationMargin[treesCells[4].start].x,
         y: CellsLocationMargin[treesCells[4].start].y,
-        opacity: 0,
+        opacity: 1,
         scale: 0.8,
-      },
+      }, //6
       show: {
         x: CellsLocationMargin[treesCells[4].end].x,
         y: CellsLocationMargin[treesCells[4].end].y,
-        opacity: 0,
+        opacity: 1,
         scale: 0.8,
         transition: { duration: 2, ease: "linear", delay: 0.4 },
       },
@@ -144,6 +144,7 @@ const TreesPositions0 = [
   },
 
   {
+    //7
     treeId: "tree0",
     name: 0,
     treeAnim: {
@@ -164,6 +165,7 @@ const TreesPositions0 = [
     },
   },
   {
+    //8
     treeId: "tree0",
     name: 0,
     treeAnim: {
@@ -182,27 +184,6 @@ const TreesPositions0 = [
       },
     },
   },
-
-  {
-    treeId: "tree0",
-    name: 0,
-    treeAnim: {
-      hidden: {
-        x: CellsLocationMargin[treesCells[7].start].x,
-        y: CellsLocationMargin[treesCells[7].start].y,
-        opacity: 0,
-        scale: 0.8,
-      },
-      show: {
-        x: CellsLocationMargin[treesCells[7].end].x,
-        y: CellsLocationMargin[treesCells[7].end].y,
-
-        opacity: 0,
-        scale: 0.8,
-        transition: { duration: 2, ease: "linear", delay: 0.4 },
-      },
-    },
-  },
 ];
 
-export default TreesPositions0;
+export default TreesPositions3;

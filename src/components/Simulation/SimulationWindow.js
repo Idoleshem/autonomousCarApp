@@ -17,11 +17,6 @@ const SimulationWindow = ({ currentDecisionPoint }) => {
     <div className="simulation-container">
       <h1>Simulation Window</h1>
 
-      <Dashboard
-        currentStatus={currentStatus}
-        currentDecision={currentDecision}
-      />
-
       <Score />
       <HighwayScene />
 
@@ -31,7 +26,6 @@ const SimulationWindow = ({ currentDecisionPoint }) => {
         decision={currentDecision}
         setCurrentDecision={setCurrentDecision}
       />
-      <AI />
     </div>
   );
 };
